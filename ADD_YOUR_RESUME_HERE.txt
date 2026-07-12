@@ -1,0 +1,14 @@
+Git doesn't track empty folders, so this placeholder file keeps this
+directory around until you add your real resume.
+
+To finish setting up the Résumé section:
+  1. Export your résumé as a PDF.
+  2. Name it exactly:  resume.pdf
+  3. Drop it in this folder (assets/resume/resume.pdf), replacing nothing —
+     it just needs to sit alongside this file.
+  4. Delete this .txt file (optional, just tidiness).
+
+The site already links to assets/resume/resume.pdf from the nav bar, the
+hero "Download Résumé" button, and the Résumé section's embedded preview —
+so once the file exists at that path, all three start working with no
+other changes needed.

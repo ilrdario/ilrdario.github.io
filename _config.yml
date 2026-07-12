@@ -1,0 +1,25 @@
+# This site is a hand-built static site (plain HTML/CSS/JS) — it does not
+# use Jekyll layouts, includes, collections, or a Jekyll theme. GitHub Pages
+# still runs everything through Jekyll by default, but since index.html has
+# no front matter, Jekyll passes it through untouched and just publishes the
+# files as-is. This file only sets site metadata (useful for SEO/tab titles)
+# and tells Jekyll to leave a couple of extra files alone.
+#
+# ↓ Update these three lines for your own repo/GitHub Pages URL.
+title: "Isaac Dario — Computer Engineering"
+description: "Computer Engineering student at UBC — digital design, FPGA/ASIC, computer architecture, VLSI, and embedded systems."
+url: "https://ilrdario.github.io"
+
+# No baseurl needed for a <username>.github.io repo (site served at the
+# domain root). If you're instead publishing this as a PROJECT page
+# (e.g. github.com/yourusername/portfolio, served at
+# yourusername.github.io/portfolio), uncomment the line below:
+# baseurl: "/portfolio"
+
+lang: en
+markdown: kramdown
+
+# Keep Jekyll from trying to do anything clever with these.
+exclude:
+  - README.md
+  - "*.log"

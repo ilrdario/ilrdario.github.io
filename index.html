@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Computer Engineering, UBC</title>
+<meta name="description" content="Portfolio of Your Name, a Computer Engineering student at the University of British Columbia focused on digital design, FPGA/ASIC development, computer architecture, and embedded systems.">
+<meta name="theme-color" content="#0b0d10">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Name — Computer Engineering, UBC">
+<meta property="og:description" content="Digital design, FPGA/ASIC, computer architecture, and embedded systems.">
+<meta property="og:url" content="https://yourusername.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ==========================================================================
+     NAV
+     ========================================================================== -->
+<header class="site-nav" id="site-nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="bracket">[</span>YN<span class="bracket">]</span><span class="status-dot" aria-hidden="true"></span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="assets/resume/resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==========================================================================
+       HERO
+       ========================================================================== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <!-- static trace bodies -->
+        <g>
+          <path class="trace-line" pathLength="100" d="M40 80 H300 V180 H560" />
+          <path class="trace-line" pathLength="100" d="M700 40 V160 H980" />
+          <path class="trace-line" pathLength="100" d="M1400 60 H1120 V220 H1260 V340" />
+          <path class="trace-line" pathLength="100" d="M1400 460 H1180 V600 H1320" />
+          <path class="trace-line" pathLength="100" d="M1400 700 H1200 V820" />
+          <path class="trace-line" pathLength="100" d="M700 860 V700 H900 V780" />
+          <path class="trace-line" pathLength="100" d="M40 820 H260 V760 H460" />
+          <path class="trace-line" pathLength="100" d="M1380 40 V900" />
+          <path class="trace-line" pathLength="100" d="M620 40 V140 H700" />
+          <path class="trace-line" pathLength="100" d="M1000 900 V760 H1180 V680" />
+        </g>
+        <!-- animated signal pulses (same paths) -->
+        <g>
+          <path class="trace-pulse" pathLength="100" style="animation-duration:3.6s;animation-delay:-0.4s" d="M40 80 H300 V180 H560" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:2.9s;animation-delay:-1.8s" d="M700 40 V160 H980" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:4.2s;animation-delay:-2.6s" d="M1400 60 H1120 V220 H1260 V340" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:3.1s;animation-delay:-0.9s" d="M1400 460 H1180 V600 H1320" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:3.8s;animation-delay:-3.1s" d="M1400 700 H1200 V820" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:4.6s;animation-delay:-1.3s" d="M700 860 V700 H900 V780" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:3.3s;animation-delay:-2.1s" d="M40 820 H260 V760 H460" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:5.2s;animation-delay:-0.2s" d="M1380 40 V900" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:2.6s;animation-delay:-1.5s" d="M620 40 V140 H700" />
+          <path class="trace-pulse" pathLength="100" style="animation-duration:3.9s;animation-delay:-2.9s" d="M1000 900 V760 H1180 V680" />
+        </g>
+        <!-- pads -->
+        <g>
+          <rect class="trace-pad" x="557" y="177" width="6" height="6" />
+          <rect class="trace-pad" x="977" y="37" width="6" height="6" />
+          <rect class="trace-pad" x="1257" y="337" width="6" height="6" />
+          <rect class="trace-pad" x="1317" y="597" width="6" height="6" />
+          <rect class="trace-pad" x="1197" y="817" width="6" height="6" />
+          <rect class="trace-pad" x="897" y="777" width="6" height="6" />
+          <rect class="trace-pad" x="457" y="757" width="6" height="6" />
+          <rect class="trace-pad" x="1177" y="677" width="6" height="6" />
+        </g>
+        <!-- vias -->
+        <g>
+          <circle class="trace-via" cx="300" cy="80" r="3" style="animation-duration:2.4s;animation-delay:-0.5s" />
+          <circle class="trace-via" cx="1120" cy="60" r="3" style="animation-duration:3.1s;animation-delay:-1.4s" />
+          <circle class="trace-via" cx="1180" cy="460" r="3" style="animation-duration:2.8s;animation-delay:-2.2s" />
+          <circle class="trace-via" cx="260" cy="820" r="3" style="animation-duration:3.6s;animation-delay:-0.8s" />
+          <circle class="trace-via" cx="900" cy="700" r="3" style="animation-duration:2.2s;animation-delay:-1.9s" />
+          <circle class="trace-via" cx="1200" cy="760" r="3" style="animation-duration:3.3s;animation-delay:-2.6s" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Computer Engineering · University of British Columbia</p>
+        <h1>Your Name<br><span class="divider-mark">/</span> <span class="accent">silicon to systems.</span></h1>
+        <p class="hero-tagline">I design and verify digital hardware — from RTL and FPGA prototypes to standard-cell layout — and the firmware that runs on top of it. Currently focused on computer architecture and hardware for AI acceleration.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/resume/resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download Résumé</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:your.email@ubc.ca" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="spec-card" role="complementary" aria-label="Quick facts">
+        <div class="spec-head"><span>SPEC SHEET</span><span>REV. 2026</span></div>
+        <div class="spec-row"><span class="k">PROGRAM</span><span class="v">B.A.Sc · Comp. Eng.</span></div>
+        <div class="spec-row"><span class="k">INSTITUTION</span><span class="v">UBC</span></div>
+        <div class="spec-row"><span class="k">FOCUS</span><span class="v">VLSI · FPGA · Arch</span></div>
+        <div class="spec-row"><span class="k">LOCATION</span><span class="v">Vancouver, BC</span></div>
+        <div class="spec-row"><span class="k">STATUS</span><span class="v status"><span class="dot"></span>Open to co-op</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT
+       ========================================================================== -->
+  <section class="section-pad" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">1.0</span>ABOUT</p>
+        <h2 class="section-title">Working where hardware meets software</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm a Computer Engineering student at the <strong>University of British Columbia</strong>, focused on the hardware side of computing — from transistor-level circuit behaviour up through processor microarchitecture. I like the part of the stack where a hardware description in Verilog becomes a synthesized netlist, a routed FPGA bitstream, or eventually silicon.</p>
+          <p>My coursework and personal projects span digital logic design, VLSI/ASIC design flows, FPGA prototyping, computer architecture, and embedded systems. I'm especially interested in <strong>hardware for AI acceleration</strong> and how architectural decisions trade off power, performance, and area.</p>
+          <p>Outside of coursework, I'm usually prototyping something on a breadboard or an FPGA dev board, or reading chip teardown reports for fun. <em>(Edit this paragraph with your actual interests, clubs, or hobbies.)</em></p>
+          <ul class="focus-list">
+            <li>Digital logic &amp; RTL design (Verilog / SystemVerilog)</li>
+            <li>Computer architecture &amp; microarchitecture</li>
+            <li>VLSI / physical design &amp; verification</li>
+            <li>Embedded systems &amp; firmware</li>
+          </ul>
+        </div>
+        <div class="about-panel">
+          <h3>Currently</h3>
+          <div class="spec-row"><span class="k">Year</span><span class="v">3rd Year</span></div>
+          <div class="spec-row"><span class="k">Expected Grad</span><span class="v">May 2027</span></div>
+          <div class="spec-row"><span class="k">GPA</span><span class="v">—</span></div>
+          <div class="spec-row"><span class="k">Seeking</span><span class="v">Hardware Co-op</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- ==========================================================================
+       SKILLS
+       ========================================================================== -->
+  <section class="section-pad" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">2.0</span>SKILLS</p>
+        <h2 class="section-title">Capabilities</h2>
+        <p class="section-lede">Tools and languages I use across the flow — from RTL to layout to firmware.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Hardware Design &amp; Verification</h3>
+          <span class="skill-sub">RTL → testbench</span>
+          <div class="skill-tags">
+            <span class="tag">Verilog</span><span class="tag">SystemVerilog</span><span class="tag">VHDL</span><span class="tag">UVM</span><span class="tag">ModelSim / QuestaSim</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Computer Architecture</h3>
+          <span class="skill-sub">Microarchitecture</span>
+          <div class="skill-tags">
+            <span class="tag">RISC-V</span><span class="tag">Pipelining</span><span class="tag">Cache Design</span><span class="tag">Branch Prediction</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>VLSI &amp; Physical Design</h3>
+          <span class="skill-sub">Silicon</span>
+          <div class="skill-tags">
+            <span class="tag">Cadence Virtuoso</span><span class="tag">Synopsys DC</span><span class="tag">Static Timing Analysis</span><span class="tag">DRC / LVS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>FPGA &amp; Embedded</h3>
+          <span class="skill-sub">Prototyping</span>
+          <div class="skill-tags">
+            <span class="tag">Xilinx Vivado</span><span class="tag">Intel Quartus</span><span class="tag">ARM Cortex-M</span><span class="tag">FreeRTOS</span><span class="tag">I2C / SPI / UART</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <span class="skill-sub">Languages</span>
+          <div class="skill-tags">
+            <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">RISC-V / ARM ASM</span><span class="tag">MATLAB</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <span class="skill-sub">Workflow</span>
+          <div class="skill-tags">
+            <span class="tag">Git</span><span class="tag">Linux</span><span class="tag">LTspice</span><span class="tag">KiCad</span><span class="tag">Tcl / Bash</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS
+       ========================================================================== -->
+  <section class="section-pad" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">3.0</span>PROJECTS</p>
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-lede">Course, research, and personal projects. Replace with your own — titles below are realistic placeholders spanning the areas you listed.</p>
+      </div>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U1</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">FPGA · Computer Architecture</span>
+          <h3>RV32I RISC-V Core on FPGA</h3>
+          <p class="desc">A 5-stage pipelined RV32I core written in Verilog with hazard detection and forwarding to resolve data hazards without stalling. Synthesized and validated on a Xilinx Basys 3 board running compiled C test programs.</p>
+          <div class="project-tags"><span class="tag">Verilog</span><span class="tag">RISC-V</span><span class="tag">Vivado</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U2</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">VLSI · Physical Design</span>
+          <h3>8-bit ALU Standard-Cell Layout</h3>
+          <p class="desc">Transistor-level design and layout of an 8-bit ALU in a CMOS process using Cadence Virtuoso, including DRC/LVS clean-up and static timing analysis to characterize the critical path.</p>
+          <div class="project-tags"><span class="tag">Cadence Virtuoso</span><span class="tag">CMOS</span><span class="tag">STA</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U3</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">Computer Architecture</span>
+          <h3>Cache Coherence Protocol Simulator</h3>
+          <p class="desc">A cycle-accurate C++ simulator modeling MESI cache coherence across a multicore system, used to analyze how cache line size and associativity affect miss rate and coherence traffic.</p>
+          <div class="project-tags"><span class="tag">C++</span><span class="tag">MESI</span><span class="tag">Simulation</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U4</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">Embedded Systems</span>
+          <h3>RTOS-Based Environmental Monitor</h3>
+          <p class="desc">A real-time embedded system on an ARM Cortex-M MCU running FreeRTOS, polling temperature / humidity / air-quality sensors over I2C and streaming readings over UART with task-level priority scheduling.</p>
+          <div class="project-tags"><span class="tag">FreeRTOS</span><span class="tag">Cortex-M</span><span class="tag">C</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U5</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">FPGA · AI Hardware</span>
+          <h3>Systolic Array Accelerator for CNN Inference</h3>
+          <p class="desc">A parameterizable systolic array written in SystemVerilog to accelerate matrix multiplication for CNN inference, targeting a Zynq FPGA and benchmarked for throughput against a software baseline.</p>
+          <div class="project-tags"><span class="tag">SystemVerilog</span><span class="tag">FPGA</span><span class="tag">AI Hardware</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="designator">U6</span>
+            <span class="project-links">
+              <a href="#" aria-label="View source on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg></a>
+            </span>
+          </div>
+          <span class="project-status">PCB Design</span>
+          <h3>USB-C Power Delivery Breakout Board</h3>
+          <p class="desc">A 2-layer PCB designed in KiCad to negotiate USB-C Power Delivery profiles — schematic capture, layout, and bring-up/debug on the bench with an oscilloscope and multimeter.</p>
+          <div class="project-tags"><span class="tag">KiCad</span><span class="tag">PCB Design</span><span class="tag">Power</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- ==========================================================================
+       EXPERIENCE
+       ========================================================================== -->
+  <section class="section-pad" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">4.0</span>EXPERIENCE</p>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">MAY 2026 — AUG 2026</p>
+          <h3>Hardware Engineering Intern</h3>
+          <span class="org">Company Name · Vancouver, BC</span>
+          <ul>
+            <li>Developed and simulated RTL modules in SystemVerilog for a peripheral interface block, reaching full functional coverage in a UVM-based testbench.</li>
+            <li>Worked with senior engineers on timing closure, restructuring critical-path logic to resolve setup violations.</li>
+            <li>Automated regression testing with Python and Tcl scripts, cutting manual verification time significantly.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">SEP 2025 — APR 2026</p>
+          <h3>Undergraduate Teaching Assistant — Digital Logic Design</h3>
+          <span class="org">UBC Dept. of Electrical &amp; Computer Engineering</span>
+          <ul>
+            <li>Led weekly lab sessions on combinational and sequential logic design and Verilog fundamentals.</li>
+            <li>Held office hours and graded assignments, giving feedback on FPGA-based lab projects.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">JAN 2025 — APR 2025</p>
+          <h3>Undergraduate Research Assistant</h3>
+          <span class="org">Lab Name, UBC ECE</span>
+          <ul>
+            <li>Assisted in characterizing the power and performance of a RISC-V accelerator design under a faculty supervisor.</li>
+            <li>Contributed to a simulation flow used to evaluate architectural design trade-offs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION
+       ========================================================================== -->
+  <section class="section-pad" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">5.0</span>EDUCATION</p>
+        <h2 class="section-title">Academics</h2>
+      </div>
+      <div class="edu-card">
+        <div>
+          <h3>Bachelor of Applied Science — Computer Engineering</h3>
+          <span class="org">University of British Columbia</span>
+          <p class="meta">Expected Graduation: May 2027 · Vancouver, BC</p>
+        </div>
+      </div>
+      <div class="coursework-block">
+        <h4>Relevant Coursework</h4>
+        <div class="coursework-tags">
+          <span class="tag">Digital Logic Design</span>
+          <span class="tag">Computer Architecture</span>
+          <span class="tag">VLSI Circuit Design</span>
+          <span class="tag">Microprocessor Systems &amp; Embedded Software</span>
+          <span class="tag">Signals &amp; Systems</span>
+          <span class="tag">Electromagnetics</span>
+          <span class="tag">Operating Systems</span>
+          <span class="tag">Data Structures &amp; Algorithms</span>
+          <span class="tag">Probability &amp; Random Processes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- ==========================================================================
+       RESUME
+       ========================================================================== -->
+  <section class="section-pad" id="resume">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-tag"><span class="num">6.0</span>RESUME</p>
+        <h2 class="section-title">Full résumé</h2>
+      </div>
+      <div class="resume-block">
+        <div class="resume-copy">
+          <p>The sections above cover the highlights — the PDF has the complete picture, formatted for a quick read.</p>
+          <div class="btn-row">
+            <a href="assets/resume/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">Open Résumé (PDF)</a>
+          </div>
+        </div>
+        <div class="resume-preview">
+          <iframe src="assets/resume/resume.pdf" title="Résumé preview" loading="lazy"></iframe>
+          <div class="resume-fallback">
+            <span>resume.pdf not found yet.<br>Add your file at<br><code>assets/resume/resume.pdf</code></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT
+       ========================================================================== -->
+  <section class="section-pad" id="contact">
+    <div class="wrap contact-inner">
+      <p class="section-tag" style="justify-content:center"><span class="num">7.0</span>CONTACT</p>
+      <h2>Let's talk hardware.</h2>
+      <p>Open to co-op and new-grad opportunities in digital design, FPGA, VLSI, and computer architecture. Feel free to reach out.</p>
+      <div class="contact-actions">
+        <button class="btn btn-primary" id="copy-email">your.email@ubc.ca</button>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      </div>
+      <p class="copy-toast" id="copy-toast">Copied to clipboard</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Your Name</span>
+    <span>Built with HTML, CSS &amp; JS · Deployed on GitHub Pages</span>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 15 12 9l-6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

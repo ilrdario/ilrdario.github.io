@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Not Found</title>
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .not-found {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--space-4);
+    padding: var(--space-6);
+  }
+  .not-found .code {
+    font-family: var(--font-mono);
+    font-size: clamp(3rem, 2rem + 6vw, 6rem);
+    color: var(--signal);
+    letter-spacing: -0.02em;
+  }
+  .not-found p { color: var(--ink-dim); max-width: 420px; }
+</style>
+</head>
+<body>
+  <div class="not-found">
+    <span class="eyebrow">ERROR</span>
+    <div class="code">404</div>
+    <p>This address doesn't map to anything — like a dangling wire with no net connected. Let's get you back to solid ground.</p>
+    <a class="btn btn-primary" href="/">Return Home</a>
+  </div>
+</body>
+</html>
